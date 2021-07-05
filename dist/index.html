@@ -13,10 +13,66 @@
     <link rel="stylesheet" href="">
   </head>
   <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    <h5 class="text-white bg-dark">asdfasdf</h5>
+    <nav class="navbar navbar-dark bg-secondary py-4 justify-content-center">
+      <div class="container-fluid row justify-content-center">
+        <a class="navbar-brand col-3" href="#">Weather App</a>
+        <div class="col-5">
+          <div class="input-group">
+            <input type="text" class="form-control text-white border-primary bg-primary" id="searchBar" placeholder="search">
+            <button class="btn btn-primary text-white" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+        <a role="button" class="col-3 text-white text-decoration-none text-center">asdfasf</a>
+      </div>      
+    </nav>
+    
+    <div class="container-fluid bg-dark py-1 mb-4">
+      <a class="navbar-brand" href="#"></a>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="card col-7">
+          <div class="card-body ">
+            <div class="row">
+              <div class="col-9 d-flex flex-column">
+                <p class="fw-bold text-white">Tiempo en Saltillo</p>
+                <p class="text-white">A a partir de </p>
+                <h2 class="text-white display-1 fw-bold">
+                  23°
+                </h2>
+                <p class="text-white fw-bold">Partly cloudy</p>
+                <p class="text-white">chance of rain</p>
+              </div>
+              <div class="col-3 d-flex flex-column justify-content-center">
+                <img id="weatherIcon" src="../src/assets/img/2995001_cloud_cloudy_sun_weather_summer_icon (1).png" class="img-fluid" alt="">
+                <p id="minMax" class="fw-bold text-white text-center">24/14</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card col-4 px-0">
+          <div class="card-body px-0">
+            <p class="px-4 text-white fw-bold">Weather Today in </p>
+            <h1 class="px-4 text-white display-3 fw-bold mb-0 pb-0">17</h1>
+            <p class="px-4 border-bottom border-white text-white py-2 mb-0">Feels like</p>
+            <div class="w-100 row mx-0 border-bottom border-white justify-content-between">
+              <p class="px-4 mb-0 py-2 text-white col-auto">min/max</p>
+              <p class="px-4 mb-0 py-2 text-white col-auto">17</p>
+            </div>
+            <div class="w-100 row mx-0 border-bottom border-white justify-content-between">
+              <p class="px-4 mb-0 py-2 text-white col-auto">Humidity</p>
+              <p class="px-4 mb-0 py-2 text-white col-auto">17</p>
+            </div>
+            <div class="w-100 row mx-0 border-bottom border-white justify-content-between">
+              <p class="px-4 mb-0 py-2 text-white col-auto">Pressure</p>
+              <p class="px-4 mb-0 py-2 text-white col-auto">17</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <script src="main.js"></script>
   </body>
 </html>
