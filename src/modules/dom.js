@@ -1,5 +1,6 @@
 window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js');
 
+// eslint-disable-next-line no-undef
 const errorModal = new bootstrap.Modal(document.getElementById('errorModal'));
 const searchBar = document.getElementById('searchBar');
 const searchBtn = document.getElementById('searchBtn');
@@ -15,7 +16,10 @@ const todayMinMax = document.getElementById('todayMinMax');
 const humidity = document.getElementById('humidity');
 const pressure = document.getElementById('pressure');
 const tempBtn = document.getElementById('tempBtn');
+const errorDisp = document.getElementById('err');
 
 
-export { errorModal, searchBar, searchBtn, location, hour, temp, weatherDescription,
-  icon, minMax, todayIn, feelsLike, todayMinMax, humidity, pressure, tempBtn };
+export {
+  errorModal, searchBar, searchBtn, location, hour, temp, weatherDescription,
+  icon, minMax, todayIn, feelsLike, todayMinMax, humidity, pressure, tempBtn, errorDisp,
+};
