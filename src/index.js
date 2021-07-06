@@ -1,9 +1,8 @@
 import '@fortawesome/fontawesome-free/js/all';
 import './main.scss';
 import { getWeather } from './modules/weatherApi';
-import { errorModal, searchBar, searchBtn } from './modules/dom';
-import { fillPage } from './modules/helpers';
-
+import { errorModal, searchBar, searchBtn, tempBtn } from './modules/dom';
+import { fillPage, changeTempUnit } from './modules/helpers';
 
 searchBtn.addEventListener("click", (e) => {
   e.preventDefault;
@@ -22,4 +21,8 @@ searchBtn.addEventListener("click", (e) => {
     console.log(err);
     errorModal.show();
   })
+});
+
+tempBtn.addEventListener('click', () => {
+  changeTempUnit();
 });
