@@ -1,4 +1,4 @@
-window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js');
+import bootstrap from 'bootstrap/dist/js/bootstrap.bundle';
 
 // eslint-disable-next-line no-undef
 const errorModal = new bootstrap.Modal(document.getElementById('errorModal'));

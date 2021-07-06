@@ -5,6 +5,10 @@ body {
   background-repeat: no-repeat;
 }
 
+.card {
+  box-shadow: 0 0 15px 0 #000;
+}
+
 .form-control::placeholder {
   color: white !important;
 }
