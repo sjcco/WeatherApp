@@ -50,7 +50,7 @@ const fillPage = (weather) => {
   const tempArr = [weather.main.temp, weather.main.temp_max,
     weather.main.temp_min, weather.main.feels_like];
   tempArr.forEach((temp, index, arr) => { arr[index] = kelvinToCelsius(temp); });
-  if (tempBtn.textContent === '°k') {
+  if (tempBtn.textContent === '°F') {
     tempArr.forEach((temp, index, arr) => { arr[index] = celsiusToFarenheit(temp); });
   }
 
