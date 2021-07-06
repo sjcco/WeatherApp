@@ -1,0 +1,10 @@
+body {
+  height: 100vh;
+  background: rgb(18,50,95);
+  background: linear-gradient(180deg, #855798 6%, #CCA097 75%);
+  background-repeat: no-repeat;
+}
+
+.form-control::placeholder {
+  color: white !important;
+}

@@ -22,8 +22,12 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "@popperjs/core": "^2.9.2",
     "bootstrap": "^5.0.2",
+    "dotenv": "^10.0.0",
+    "google-geocoder": "^0.2.1",
+    "google-maps": "^4.3.3",
     "jquery": "^3.6.0"
   }
 }
