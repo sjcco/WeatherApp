@@ -26,7 +26,7 @@ WeatherApp that displays the weather of the searched city.
 
 ## Authors
 
-👤 **Author1**
+👤 **Juan Carlos Campos Ojeda**
 
 - GitHub: [@sjcco](https://github.com/githubhandle)
 - Twitter: [@CarlosCamposO](https://twitter.com/twitterhandle)
@@ -45,7 +45,6 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
 - microverse team
 
 ## 📝 License
