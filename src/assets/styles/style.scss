@@ -1,0 +1,14 @@
+body {
+  height: 100vh;
+  background: rgb(18, 50, 95);
+  background: linear-gradient(180deg, #855798 6%, #cca097 75%);
+  background-repeat: no-repeat;
+}
+
+.card {
+  box-shadow: 0 0 15px 0 #000;
+}
+
+.form-control::placeholder {
+  color: white !important;
+}

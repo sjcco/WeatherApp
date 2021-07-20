@@ -13,10 +13,81 @@
     <link rel="stylesheet" href="">
   </head>
   <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    <h5 class="text-white bg-dark">asdfasdf</h5>
+    <nav class="navbar navbar-dark bg-secondary py-4 justify-content-center">
+      <div class="container-fluid row justify-content-center">
+        <a class="navbar-brand col-3" href="#">Weather App</a>
+        <div class="col-5">
+          <div class="input-group">
+            <input type="search" class="form-control text-white border-primary bg-primary" id="searchBar" placeholder="search">
+            <button class="btn btn-primary text-white" type="submit" id="searchBtn"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+        <a id="tempBtn" role="button" class="col-3 text-white fw-bold display-6 text-decoration-none text-center">°C</a>
+      </div>      
+    </nav>
+    
+    <div class="container-fluid bg-dark py-1 mb-4">
+      <a class="navbar-brand" href="#"></a>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="card bg-transparent h-auto col-7">
+          <div class="card-body ">
+            <div class="row h-100">
+              <div class="col-9 d-flex flex-column justify-content-center">
+                <p id="location" class="fw-bold text-white">- Weather</p>
+                <h2 id="temp" class="text-white display-1 fw-bold my-5">
+                  -°
+                </h2>
+                <p id="weather" class="text-white fw-bold mt-3 mb-0">Partly cloudy</p>
+              </div>
+              <div class="col-3 d-flex flex-column justify-content-center">
+                <img id="weatherIcon" src="/dist/img/cloudy.png" class="img-fluid" alt="">
+                <p id="minMax" class="fw-bold text-white text-center">-/-</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-transparent col-4 px-0">
+          <div class="card-body px-0">
+            <p id="todayIn" class="px-4 text-white fw-bold">Weather Today in </p>
+            <h1 id="feelsLike" class="px-4 text-white display-3 fw-bold mb-0 pb-0">-°</h1>
+            <p class="px-4 border-bottom border-white text-white py-2 mb-0">Feels like</p>
+            <div class="w-100 row mx-0 border-bottom border-white justify-content-between">
+              <p class="px-4 mb-0 py-2 text-white col-auto">min/max</p>
+              <p id="todayMinMax" class="px-4 mb-0 py-2 text-white col-auto">-</p>
+            </div>
+            <div class="w-100 row mx-0 border-bottom border-white justify-content-between">
+              <p class="px-4 mb-0 py-2 text-white col-auto">Humidity</p>
+              <p id="humidity" class="px-4 mb-0 py-2 text-white col-auto">-</p>
+            </div>
+            <div class="w-100 row mx-0 border-bottom border-white justify-content-between">
+              <p class="px-4 mb-0 py-2 text-white col-auto">Pressure</p>
+              <p id="pressure" class="px-4 mb-0 py-2 text-white col-auto">-</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Error</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div id="err" class="modal-body">
+          
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <script src="main.js"></script>
   </body>
 </html>
